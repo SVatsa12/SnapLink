@@ -1,3 +1,4 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
 @tailwind base;
@@ -250,3 +251,8 @@
 .delay-400 { animation-delay: 0.4s; }
 .delay-500 { animation-delay: 0.5s; }
 .delay-700 { animation-delay: 0.7s; }
+
+:root { --bg:#FAF7F0; --fg:#111; --border:#111; --accent:#C6FF3D; --muted:#555; --card:#fff; --shadow:4px 4px 0 #111; }
+.dark { --bg:#111; --fg:#FAF7F0; --border:#FAF7F0; --accent:#C6FF3D; --muted:#aaa; --card:#1a1a1a; --shadow:4px 4px 0 #FAF7F0; }
+body { background:var(--bg); color:var(--fg); font-family:'Space Grotesk',sans-serif; }
+.mono { font-family:'JetBrains Mono',monospace; }

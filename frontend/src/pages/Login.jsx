@@ -1,4 +1,4 @@
-import { useState } from "react";
+﻿import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 
@@ -61,7 +61,7 @@ const Login = () => {
   };
 
   return (
-    <div className="flex min-h-[calc(100vh-64px)] items-center justify-center px-4 py-12">
+    <div className="flex min-h-screen bg-[var(--bg)] text-[var(--fg)] items-center justify-center px-4 py-12">
       {/* Background decoration */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
         <div className="absolute left-1/3 top-1/4 h-64 w-64 rounded-full bg-cyan-600/8 blur-3xl animate-pulse-glow" />
@@ -117,7 +117,7 @@ const Login = () => {
                 <input
                   id="login-password"
                   type={showPassword ? "text" : "password"}
-                  placeholder="••••••••"
+                  placeholder="â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢"
                   required
                   value={form.password}
                   onChange={(e) => setForm({ ...form, password: e.target.value })}

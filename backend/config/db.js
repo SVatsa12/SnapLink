@@ -7,9 +7,9 @@ const connectDB = async () => {
     }
     // Verify DATABASE_URL is valid and DB reachable at boot.
     await prisma.$queryRaw`SELECT 1`;
-    console.log("PostgreSQL connected");
+    console.log("Database connected");
   } catch (error) {
-    console.error("PostgreSQL connection error:", error.message);
+    console.error("Database connection error:", error.message);
     process.exit(1);
   }
 };

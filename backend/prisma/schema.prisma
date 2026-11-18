@@ -3,11 +3,8 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
+  provider = "sqlite"
   url      = env("DATABASE_URL")
-  // For Supabase, it's common to use a pooled URL for runtime (DATABASE_URL)
-  // and a direct connection for migrations (DIRECT_URL).
-  directUrl = env("DIRECT_URL")
 }
 
 model User {
